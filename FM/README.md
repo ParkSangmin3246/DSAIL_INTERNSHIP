@@ -1,4 +1,4 @@
-Brief summary and Implementation of FM
+# Brief summary and Implementation of FM
 
 기존의 SVM은 sparse한 data에 대해 좋은 성능을 내지 못하여 이를 발전시키고자 제안된 기법이 FM이다.
 주요한 아이디어로는 다음과 같은데, 우선 SVM에서는 interaction parameter w_ij 를 단일항으로써 표현하였다.
