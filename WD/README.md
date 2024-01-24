@@ -1,4 +1,4 @@
-# Brief summary of WD and Implentation
+# Brief summary of WD & Implentation
 
 Recommender system에서 목표 중 하나는 memorization과 generalization을 함께 달성하는 것이다.
 Memorization은 기존의 historical data의 frequent co-occurrence를 가지고 correlation을 모색한다. 다만 이 접근은 unseen data에 대해선 취약할 수 있다.
@@ -9,13 +9,16 @@ Generalization은 latent vector embedding으로 unseen data를 예측하는데 �
 Wide part는 Memoriazation 역할을 담당한다. 기존의 feature vector들 뿐 아니라 그것들끼리 cross product를 진행하여 새로운 feature 역시 생성하여 linear model의 generalized version을 실행한다. 
 
 ![image](https://github.com/ParkSangmin3246/2023_DSAIL_INTERNSHIP/assets/68985719/de0e6a16-a1a1-460d-9e8b-62dc8f024f89)
+
 ![image](https://github.com/ParkSangmin3246/2023_DSAIL_INTERNSHIP/assets/68985719/2e8c3476-5c46-48c5-81e9-2f665d9b556d)
+
 ![image](https://github.com/ParkSangmin3246/2023_DSAIL_INTERNSHIP/assets/68985719/54de2b00-4fcb-4249-ae35-18fdae4e9161)
 
 
 Deep part는 Generalization 역할을 담당한다. categorical feature는 저차원으로 임베딩하고, 이후 Continuous feature와 Concatenate하여서 Layer에Feeding 함으로써 feed-forward neural network를 실행한다.
 
 ![image](https://github.com/ParkSangmin3246/2023_DSAIL_INTERNSHIP/assets/68985719/283795be-63ca-4812-ac80-8aa56f542e31)
+
 ![image](https://github.com/ParkSangmin3246/2023_DSAIL_INTERNSHIP/assets/68985719/2177b121-7cbd-4d13-b191-fe20d30282e2)
 
 
